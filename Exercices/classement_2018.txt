@@ -1,0 +1,15 @@
+ 174 France
+ 165 Paris
+  76 Champs-Élysées
+  37 États-Unis
+  36 Russie
+  21 Strasbourg
+  19 Élysée
+  18 place de la République
+  18 Saint-Lazare
+  18 Japon
+  17 Canada
+  16 Royaume-Uni
+  15 Belgique
+  15 Bandol
+  15 Arc de Triomphe

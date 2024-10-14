@@ -1,0 +1,22 @@
+# Exercice 1 : Comptages simples
+echo : afficher le texte "Annotations en 2016/2017/2018 : " dans le fichier comptes.txt
+grep : rechercher les lignes contenant "2016/2017/2018" dans tous les fichiers .ann
+wc -l : compter le nombre de lignes et l'ajouter au fichier comptes.txt
+cat : afficher le contenu du fichier comptes.txt
+
+# Exercice 2 : Classements
+grep -h 'Location' : rechercher toutes les lignes contenant "Location" sans afficher les noms des fichiers
+cut -f3 : couper et prendre la troisième colonne de chaque ligne
+sort : trier les lieux par ordre alphabétique
+uniq -c : compter le nombre d'occurences de chaque lieu
+sort -nr : trier les résultats en ordre décroissant
+head -n 15 : afficher les 15 lieux les plus cités
+> : rediriger la sortie vers le fichier classement_2016/2017/2018.txt
+grep -v '^A[0-9]' : exclure les lignes qui commencent par la lettre A suivie d'un chiffre
+
+# Tag
+git add : ajouter tous les fichiers dans le dossier Exercices à staging area
+git commit -m : enregistrer les changements dans le dépôt local avec un message de commit
+git push : pousser les changements vers le dépôt distant sur la branche main
+git tag : créer un tag 
+git push --tags : pousser le tag vers le dépôt distant

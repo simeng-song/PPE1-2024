@@ -5,3 +5,4 @@ Ligne bidon 1
 - Apprentissage des opérations Git, y compris le clonage de dépôts et la synchronisation
 # Séance 3
 ## exercices git
+Cette ligne doit rester après correction

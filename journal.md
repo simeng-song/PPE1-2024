@@ -14,3 +14,4 @@ Une nouvelle ligne dans oups.md
 >>>>>>> 975621ad778128cd3523eca9c59bce86338c506c
 Ceci est un mauvais fichier.
 Une nouvelle ligne dans oups.md
+Je vais mettre cette ligne de côté

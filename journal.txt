@@ -1,2 +1,3 @@
+Ligne bidon 1
 # Séance 3
 ## exercices git

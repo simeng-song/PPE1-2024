@@ -1,3 +1,4 @@
+Ligne bidon 1
 # Journal de bord du projet encadré
 ## Travail du jour
 - Création d'un compte GitHub

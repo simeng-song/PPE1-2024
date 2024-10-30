@@ -1,6 +1,7 @@
 # Journal de bord du projet encadré
-## Travail du jour
-# Séance 1
+
+## Séance 1
+
 
 # Séance 2
 Lors de la deuxième séance, deux sujets essentiels ont été introduits : les commandes de Git et la gestion de dépôt sur GitHub. On a compris que Git est un outil outil de contrôle de version qui permey de gérer nos fichiers de manière efficace et structurée. De plus, on a appris à utiliser GitHub pour stocker et partager nos projets.

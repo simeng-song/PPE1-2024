@@ -58,3 +58,19 @@ Les commandes essentielles en Git :
 ## Séance 3
 Lors de l'exercice 2.a, j'ai rencontré un problème majeur. Après avoir filtré les fichiers de l'année 2018, de la même manière que pour les deux années précédentes, j'ai constaté que les résultats contenaient des noms de lieux et des entrées non pertinentes comme A7 et A9. Le défi était de supprimer ces numéros de routes tout en conservant les noms de lieux.
 Pour résoudre ce problème, j'ai utilisé la commande `grep --help` et découvert l'option `-v`, qui permet d'exclure les lignes correspondant aux routes et de n'inclure que les noms de lieux valides dans le classement final.
+
+## Séance 4  
+Lors de la quatrième séance, nous avons appris à automatiser des tâches répétitives et à gérer des arguments et des boucles dans les scripts. 
+
+Les principaux thèmes abordés :   
+1.Introduction aux scripts Bash :  
+Définition : un script est une suite de commandes écrites dans un fichier et exécutées comme une seule commande. Il permet de rendre les processus plus efficaces.  
+Syntaxe : structurer un script avec le shebang `#!/usr/bin/bash` pour indiquer quel interpréteur utiliser
+
+2.Variables et arguments :  
+Variables : en Bash, nous pouvons affecter des valeurs avec le signe `=` et accéder aux valeurs de variable avec le préfixe `$`.  
+Arguments : il faut valider la présence des arguments pour éviter des erreurs.
+
+3.Boucles et conditions :  
+Boucles `for` et `while`   
+Conditions `if`

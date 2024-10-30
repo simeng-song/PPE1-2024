@@ -1,8 +1,9 @@
 # Journal de bord du projet encadré
 
 ## Séance 1
-Lors de la première séance, nous avons pris connaissance des bases d'Unix, du système de fichiers, ainsi que les commandes essentielles pour manipuler les fichiers. Les principaux thèmes abordés :
+Lors de la première séance, nous avons pris connaissance des bases d'Unix, du système de fichiers, ainsi que les commandes essentielles pour manipuler les fichiers. 
 
+Les principaux thèmes abordés :  
 1.Introduction à Unix :   
 Concept de système de fichiers : tout est fichier (les programmes, les périphériques et les dossiers).    
 Philosophie Unix : Chacune des commandes Unix est conçue pour réaliser une tâche simple et précise et peut être combinée avec d'autres commandes pour accomplir des opérations plus complexes.
@@ -11,7 +12,7 @@ Philosophie Unix : Chacune des commandes Unix est conçue pour réaliser une tâ
 Arborescence  
 Chemin absolus et relatifs
 
-3. Commandes :  
+3.Commandes :  
 `cd` : changer de dossier  
 `ls` : lister des fichiers  
 `pwd` : afficher le dossier actuel  

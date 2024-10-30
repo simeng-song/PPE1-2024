@@ -3,19 +3,15 @@
 ## Séance 1
 Lors de la première séance, nous avons pris connaissance des bases d'Unix, du système de fichiers, ainsi que les commandes essentielles pour manipuler les fichiers. Les principaux thèmes abordés :
 
-1.Introduction à Unix : 
-
-Concept de système de fichiers : tout est fichier (les programmes, les périphériques et les dossiers).  
-
+1.Introduction à Unix :   
+Concept de système de fichiers : tout est fichier (les programmes, les périphériques et les dossiers).    
 Philosophie Unix : Chacune des commandes Unix est conçue pour réaliser une tâche simple et précise et peut être combinée avec d'autres commandes pour accomplir des opérations plus complexes.
 
-2.Structure du systèmes de fichiers :
-
-Arborescence
-
+2.Structure du systèmes de fichiers :  
+Arborescence  
 Chemin absolus et relatifs
 
-3. Commandes : 
+3. Commandes :  
 `cd` : changer de dossier  
 `ls` : lister des fichiers  
 `pwd` : afficher le dossier actuel  
@@ -30,9 +26,8 @@ Chemin absolus et relatifs
 `sort` : trier les lignes  
 `uniq` : supprimer les doublons  
 
-Exercice
-
-les autres commandes utilisées :
+Exercice  
+les autres commandes utilisées :  
 `wget` : télécharger une archive zip  
 `unzip` : extraire une archive  
 `mv` : déplacer les fichiers manuellement  
@@ -51,8 +46,7 @@ done
 ## Séance 2
 Lors de la deuxième séance, deux sujets essentiels ont été introduits : les commandes de Git et la gestion de dépôt sur GitHub. On a compris que Git est un outil outil de contrôle de version qui permey de gérer nos fichiers de manière efficace et structurée. De plus, on a appris à utiliser GitHub pour stocker et partager nos projets.
 
-Les commandes essentielles en Git :
-
+Les commandes essentielles en Git :  
 `git clone` : créer une copie locale d’un dépôt distant  
 `git status` : vérifier l'état des fichiers et modifications  
 `git add` : mettre en place (staging) les modifications  

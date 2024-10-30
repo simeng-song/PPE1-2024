@@ -39,13 +39,14 @@ les autres commandes utilisées :
 `history` : afficher l'historique des commandes utilisées
 
 Afin de simplifier le processus de classement des fichiers, j'ai utilisé une boucle : 
-
-```for year in {2016..2018}; do
+```
+for year in {2016..2018}; do
 	for month in {01..12}; do
 		mkdir -p txt/$year/$month
 		mkdir -p ann/$year/$month
 	done
-   done```
+done
+```
 
 ## Séance 2
 Lors de la deuxième séance, deux sujets essentiels ont été introduits : les commandes de Git et la gestion de dépôt sur GitHub. On a compris que Git est un outil outil de contrôle de version qui permey de gérer nos fichiers de manière efficace et structurée. De plus, on a appris à utiliser GitHub pour stocker et partager nos projets.

@@ -1,7 +1,51 @@
 # Journal de bord du projet encadré
 
 ## Séance 1
+Lors de la première séance, nous avons pris connaissance des bases d'Unix, du système de fichiers, ainsi que les commandes essentielles pour manipuler les fichiers. Les principaux thèmes abordés :
 
+1.Introduction à Unix : 
+
+Concept de système de fichiers : tout est fichier (les programmes, les périphériques et les dossiers).  
+
+Philosophie Unix : Chacune des commandes Unix est conçue pour réaliser une tâche simple et précise et peut être combinée avec d'autres commandes pour accomplir des opérations plus complexes.
+
+2.Structure du systèmes de fichiers :
+
+Arborescence
+
+Chemin absolus et relatifs
+
+3. Commandes : 
+`cd` : changer de dossier  
+`ls` : lister des fichiers  
+`pwd` : afficher le dossier actuel  
+`mkdir` : créer un dossier  
+`cat` : afficher le contenu  
+`head` et `tail` : lire le début ou la fin d'un fichier  
+`cp` : copier  
+`mv` : déplacer  
+`rm` : supprimer  
+`cut` : sélectionner des colonnes spécifiques  
+`grep` : rechercher dans un fichier  
+`sort` : trier les lignes  
+`uniq` : supprimer les doublons  
+
+Exercice
+
+les autres commandes utilisées :
+`wget` : télécharger une archive zip
+`unzip` : extraire une archive
+`mv` : déplacer les fichiers manuellement
+`history` : afficher l'historique des commandes utilisées
+
+Afin de simplifier le processus de classement des fichiers, j'ai utilisé une boucle : 
+
+```for year in {2016..2018}; do
+	for month in {01..12}; do
+		mkdir -p txt/$year/$month
+		mkdir -p ann/$year/$month
+	done
+   done```
 
 ## Séance 2
 Lors de la deuxième séance, deux sujets essentiels ont été introduits : les commandes de Git et la gestion de dépôt sur GitHub. On a compris que Git est un outil outil de contrôle de version qui permey de gérer nos fichiers de manière efficace et structurée. De plus, on a appris à utiliser GitHub pour stocker et partager nos projets.

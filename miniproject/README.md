@@ -1,4 +1,4 @@
-### Miniprojet
+# Miniprojet
 
 Les données de base pour le miniprojet.
 

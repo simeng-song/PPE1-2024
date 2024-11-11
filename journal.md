@@ -82,7 +82,7 @@ En utilisant `read`, on peut lire chaque ligne du fichier et effectuer les opér
 Question 2 Comment transformer "urls/fr.txt" en paramètre du script ?  
 Dans le script Shell, on peut utiliser `$1` pour remplacer le chemin du fichier "urls/fr.txt".   
 ```
-# !/bin/bash
+#!/bin/bash
 
 while read -r line; do  
 	echo ${line}  
@@ -93,4 +93,15 @@ On peut exécuter le script en terminal par passer le chemin du fichier en argum
 bash miniproject.sh urls/fr.txt
 ```  
 
-Question 3 Comment afficher le numéro de ligne avant chaque URL (sur la même ligne) ?
+Question 3 Comment afficher le numéro de ligne avant chaque URL (sur la même ligne) ?  
+On peut ajouter une variable pour le numéro de ligne et utiliser le caractère de tabulation `\t`pour séparer le numéro de l'URL.  
+```
+#!/bin/bash  
+LineNumber=1  
+while read -r line; do  
+	echo -e "${LineNumber}\t${line}"   
+	((LineNumber++))  
+donc < "$1"  
+```
+
+

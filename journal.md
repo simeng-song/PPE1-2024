@@ -74,3 +74,7 @@ Arguments : il faut valider la présence des arguments pour éviter des erreurs.
 3.Boucles et conditions :  
 Boucles `for` et `while`   
 Conditions `if`
+
+## Séance 5
+Question 1 Pourquoi ne pas utiliser `cat` ?
+En utilisant `read`, on peut lire chaque ligne du fichier et effectuer les opérations ligne par ligne, tandis que `cat` envoie tout le contenu du fichier d’un coup. 

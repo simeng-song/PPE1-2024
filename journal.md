@@ -76,5 +76,21 @@ Boucles `for` et `while`
 Conditions `if`
 
 ## Séance 5
-Question 1 Pourquoi ne pas utiliser `cat` ?
+Question 1 Pourquoi ne pas utiliser `cat` ?  
 En utilisant `read`, on peut lire chaque ligne du fichier et effectuer les opérations ligne par ligne, tandis que `cat` envoie tout le contenu du fichier d’un coup. 
+
+Question 2 Comment transformer "urls/fr.txt" en paramètre du script ?  
+Dans le script Shell, on peut utiliser `$1` pour remplacer le chemin du fichier "urls/fr.txt".   
+```
+# !/bin/bash
+
+while read -r line; do  
+	echo ${line}  
+done < "$1"  
+```  
+On peut exécuter le script en terminal par passer le chemin du fichier en argument.  
+```
+bash miniproject.sh urls/fr.txt
+```  
+
+Question 3 Comment afficher le numéro de ligne avant chaque URL (sur la même ligne) ?

@@ -5,7 +5,7 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-echo -e "Numéro de ligne\tURL\tCode HTTP\tNombre de mots\tEncodage"
+echo -e "Numéro de ligne\tURL\tCode HTTP\tEncodage\tNombre de mots"
 
 LineNumber=1
 

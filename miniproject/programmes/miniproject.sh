@@ -1,29 +1,51 @@
 #!/usr/bin/bash
 
-if [ -z "$1" ]; then
+if [ $# -ne 1 ]; then
     echo "Erreur : Veuillez spécifier un fichier en argument."
     exit 1
 fi
 
-output_file="/Users/songsimeng/PPE1/PPE1-2024/miniproject/tableaux/tableaux-fr.tsv"
+file=$1
+output_file="/Users/songsimeng/PPE1/PPE1-2024/miniproject/tableaux/tableaux-fr.html"
 
-echo -e "Numéro de ligne\tURL\tCode HTTP\tEncodage\tNombre de mots" > "$output_file"
+echo -e "
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Tableau URL</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<th>Numéro de ligne</th>
+			<th>URL</th>
+			<th>Code HTTP</th>
+			<th>Encodage</th>
+			<th>Nombre de mots</th>
+		</tr>" > "$output_file"
 
 LineNumber=1
-
-while read -r url; do
-	code_http=$(curl -o /dev/null -s -w "%{http_code}" "$url")
-	content=$(curl -s "$url")
-	encoding=$(echo "$content" | file -i - | awk -F "=" '{print $2}')
-	
+while read -r line;
+do	
+	code_http=$(curl -s -I -L -w "%{http_code}" -o /dev/null "$line")
+	encoding=$(curl -s -I -L -w "%{content_type}" -o /dev/null "$line" | egrep -o "charset=\S+" | cut -d "=" -f2)
 	if [ -z "$encoding" ]; then
-    encoding="Indéfini"  
+		encoding="Absent"
 	fi
-
-	word_count=$(echo "$content" | wc -w)
+	word_count=$(lynx -dump -nolist "$line" | wc -w)
 	
-	echo -e "${LineNumber}\t${url}\t${code_http}\t${encoding}\t${word_count}" >> "$output_file"
-	echo -e "${LineNumber}\t${url}\t${code_http}\t${encoding}\t${word_count}"	
+	echo -e "
+		<tr>
+			<td>${LineNumber}</td>
+			<td>${line}</td>
+			<td>${code_http}</td>
+			<td>${encoding}</td>
+			<td>${word_count}</td>
+		</tr>" >> "$output_file"
 	((LineNumber++))
-	
-done < "$1"
+done < "$file"
+echo -e "
+	</table>
+</body>
+</html>" >> "$output_file"

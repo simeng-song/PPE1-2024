@@ -102,6 +102,12 @@ while read -r line; do
 	echo -e "${LineNumber}\t${line}"   
 	((LineNumber++))  
 donc < "$1"  
-```
+```  
+
+## Séance 6  
+On commence par les instructions sur le mini-project et l'exercice de cette semaine consiste à écrire un script bash qui permet de récupérer les URLs contenus dans un fichier texte et d'écrire une sortie en tableau.
 
 
+
+## Séance 7  
+Cette séance introduit les bases du HTML et les principes du balisage. Nous avons appris à utiliser les balises HTML principales telles que `<html>`, `<head>`, `<body>`, ainsi que les balises de tableau comme `<table>`,`<th>`,`<tr>`, `<td>`. Cela nous permet de transformer la sortie de tableau en une page web lisible.

@@ -5,6 +5,8 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
+output_file="tableaux/tableaux-fr.tsv"
+
 echo -e "Numéro de ligne\tURL\tCode HTTP\tEncodage\tNombre de mots"
 
 LineNumber=1
@@ -20,6 +22,7 @@ while read -r url; do
 
 	word_count=$(echo "$content" | wc -w)
 	
+	echo -e "${LineNumber}\t${url}\t${code_http}\t${encoding}\t${word_count}" >> "output_file"
 	echo -e "${LineNumber}\t${url}\t${code_http}\t${encoding}\t${word_count}"	
 	((LineNumber++))
 	

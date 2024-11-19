@@ -22,7 +22,7 @@ while read -r url; do
 
 	word_count=$(echo "$content" | wc -w)
 	
-	echo -e "${LineNumber}\t${url}\t${code_http}\t${encoding}\t${word_count}" >> "output_file"
+	echo -e "${LineNumber}\t${url}\t${code_http}\t${encoding}\t${word_count}" >> "$output_file"
 	echo -e "${LineNumber}\t${url}\t${code_http}\t${encoding}\t${word_count}"	
 	((LineNumber++))
 	

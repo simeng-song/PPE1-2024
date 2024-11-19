@@ -5,7 +5,7 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-output_file="tableaux/tableaux-fr.tsv"
+output_file="~/PPE1/PPE1-2024/miniproject/tableaux/tableaux-fr.tsv"
 
 echo -e "Numéro de ligne\tURL\tCode HTTP\tEncodage\tNombre de mots"
 

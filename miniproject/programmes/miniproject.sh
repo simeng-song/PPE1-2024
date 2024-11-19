@@ -6,9 +6,8 @@ if [ -z "$1" ]; then
 fi
 
 output_file="/Users/songsimeng/PPE1/PPE1-2024/miniproject/tableaux/tableaux-fr.tsv"
-mkdir -p tableaux
 
-echo -e "Numéro de ligne\tURL\tCode HTTP\tEncodage\tNombre de mots"
+echo -e "Numéro de ligne\tURL\tCode HTTP\tEncodage\tNombre de mots" > "$output_file"
 
 LineNumber=1
 
